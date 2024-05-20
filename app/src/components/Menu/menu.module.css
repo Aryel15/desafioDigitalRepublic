@@ -1,0 +1,27 @@
+.nav{
+    background-color: var(--black);
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.logo{
+    width: 7rem;
+    object-fit: contain;
+}
+.title{
+    color: var(--black);
+    background-color: var(--orange-1);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.rules{
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: .2rem;
+    cursor: pointer;
+    width: 7rem;
+}
