@@ -1,0 +1,26 @@
+.summary{
+    color: red;
+    width: 100%;
+    list-style: none;
+    transition: .5s all;
+    padding: 2px 5px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    cursor: pointer;
+    margin-top: 2px;
+}
+.summary:hover{
+    color: rgb(255, 69, 69);
+}
+
+.summary::-webkit-details-marker{
+    display: none;
+}
+
+.list_errors{
+    max-width: 350px;
+    margin-block-end: 0;
+    padding: 5px 20px;
+    font-size: 14px;
+}

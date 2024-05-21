@@ -3,6 +3,7 @@
     align-items: flex-end;
     justify-content: center;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .container_input{

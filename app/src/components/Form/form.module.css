@@ -29,6 +29,16 @@
     transition: .5s all;
 }
 
+.btn_calculate:disabled{
+    border: 2px solid var(--orange-2);
+    background-color: var(--orange-2);
+    color: #ffd4c4;
+    cursor:not-allowed;
+}
+
+.btn_calculate:disabled:hover{
+    color: #ffd4c4;
+}
 .btn_calculate:hover{
     color: var(--white);
 }
@@ -36,7 +46,9 @@
 .btns_result{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .btn_result, .btn_restart{
@@ -58,4 +70,25 @@
 
 .btn_result:hover, .btn_restart:hover{
     color: var(--balck);
+}
+
+/*** RESPONSIVIDADE ***/
+@media screen and (max-width: 1190px) {
+    .container_inputs{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 600px) {
+    .container_buttons{
+        margin: 1rem auto;
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .container_inputs{
+        margin: 1rem auto;
+        width: 90vw;
+    }
 }
