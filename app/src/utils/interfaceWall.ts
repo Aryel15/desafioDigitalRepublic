@@ -1,6 +1,6 @@
 export interface Wall{
-    largura: Number,
-    altura: Number,
-    janelas: Number,
-    portas: Number
+    largura: number,
+    altura: number,
+    janelas: number,
+    portas: number
 }

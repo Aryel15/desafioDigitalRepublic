@@ -1,11 +1,10 @@
-import { useState } from 'react'
 import Wall from './assets/walls.svg'
 import styles from './App.module.css'
 import Menu from './components/Menu/Menu'
 import Form from './components/Form/Form'
+import Footer from './components/Footer/Footer'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -16,9 +15,7 @@ function App() {
         </section>
         <Form/>
       </main>
-      <footer>
-        <p>Feito por <a href="/">Aryel Anne</a></p>
-      </footer>
+      <Footer/>
     </>
   )
 }

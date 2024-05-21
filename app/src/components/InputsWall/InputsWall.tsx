@@ -1,32 +1,44 @@
-import React from 'react'
 import { Wall } from '../../utils/interfaceWall'
+import styles from './inputswall.module.css'
+import InputNumber from '../InputNumber/InputNumber'
 
-interface propsInput {
+interface propsInputs {
     wall: Wall, 
     index:Number, 
-    handleChangeWall: (index: Number, name: string, value: Number) => void
+    handleChangeWall: (index: Number, property: string, value: Number) => void
 }
 
-const InputsWall = (props: propsInput) => {
+const InputsWall = (props: propsInputs) => {
+    const propertiesWall = ['largura', 'altura', 'portas', 'janelas']
+    const { wall, index, handleChangeWall} = props    
+
+    const changeInputValue = (property: string, value: Number) =>{
+        handleChangeWall(index, property, value)
+    }
   return (
-    <div>
-        <div>
-            <label htmlFor="Largura">Largura</label>
-            <input type="number" id='Largura'/>
-        </div>
-        <p>x</p>
-        <div>
-            <label htmlFor="Altura">Altura</label>
-            <input type="text" id='Altura'/>
-        </div>
-        <div>
-            <label htmlFor="Portas(s)">Portas(s)</label>
-            <input type="text" id='Portas(s)'/>
-        </div>
-        <div>
-            <label htmlFor="Janela(s)">Janela(s)</label>
-            <input type="text" id='Janela(s)'/>
-        </div>
+    <div className={styles.container_inputs}>
+        {
+            propertiesWall.map((property) => (
+            <>
+                <div className={styles.container_input}>
+                    <label 
+                        htmlFor={`${property}-${index}`} 
+                        className={styles.label}>
+                        {property}
+                    </label>
+                    <InputNumber
+                        id={`${property}-${index}`}
+                        value={wall[property as keyof Wall]}
+                        property={property}
+                        changeInputValue={changeInputValue}
+                    />
+                </div>
+                {property === 'largura' && <p className={styles.x}>x</p>}
+            </>
+            ))
+        }
+
+        
     </div>
   )
 }

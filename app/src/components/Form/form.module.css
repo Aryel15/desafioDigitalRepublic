@@ -1,0 +1,61 @@
+.container_inputs{
+    margin: 1rem auto;
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.container_buttons{
+    margin: 1rem auto;
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.btn_calculate{
+    border: 2px solid var(--orange-1);
+    background-color: var(--orange-1);
+    border-radius: 0;
+    padding: .6rem 2rem;
+    color: var(--black);
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    cursor: pointer;
+    transition: .5s all;
+}
+
+.btn_calculate:hover{
+    color: var(--white);
+}
+
+.btns_result{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn_result, .btn_restart{
+    border: 2px solid var(--orange-1);
+    background-color: var(--white);
+    border-radius: 0;
+    padding: .6rem 2rem;
+    color: var(--orange-1);
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    cursor: pointer;
+    transition: .5s all;
+}
+
+.btn_restart{
+    padding: .8rem 1rem .4rem;
+}
+
+.btn_result:hover, .btn_restart:hover{
+    color: var(--balck);
+}

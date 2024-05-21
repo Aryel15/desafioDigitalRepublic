@@ -1,0 +1,14 @@
+.footer{
+    margin: 5rem auto 0;
+    text-align: center;
+}
+
+.footer_link{
+    color: var(--orange-1);
+    margin-left: 5px;
+    transition: .5s all;
+}
+
+.footer_link:hover{
+    text-decoration: underline;
+}

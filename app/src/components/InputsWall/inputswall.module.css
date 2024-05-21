@@ -1,0 +1,24 @@
+.container_inputs{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container_input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2px;
+    flex-wrap: wrap;
+}
+.label{
+    text-transform: capitalize;
+}
+.x{
+    display: flex;
+    justify-self: flex-end;
+    margin: 0;
+    height: 2rem;
+}

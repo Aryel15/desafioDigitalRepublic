@@ -1,0 +1,42 @@
+.box{
+    height: 2rem;
+    border: 1px solid var(--black);
+    width: fit-content;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.input{
+    height: auto;
+    width: 2rem;
+    margin: 0;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.button{
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--black);
+    transition: .5s all;
+    height: 100%;
+}
+
+.button:hover{
+    color: var(--orange-1)
+}
