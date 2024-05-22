@@ -22,7 +22,7 @@ export const calculatePaint = (walls: Wall[]) =>{
 
     const measures = Object.keys(initialPaint).map(key => parseFloat(key)).sort((a, b) => b - a)
     const totalArea = calculateArea(walls) 
-    let totalMeasures = initialPaint
+    const totalMeasures = initialPaint
     
     let totalPaintNeeded = totalArea / literPerMeter
 

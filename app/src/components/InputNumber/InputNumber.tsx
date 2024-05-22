@@ -1,11 +1,10 @@
-import React from "react";
 import styles from "./inputnumber.module.css";
 
 interface propsInput {
-  value: Number;
+  value: number;
   id: string;
   property: string;
-  changeInputValue: (property: string, value: Number) => void;
+  changeInputValue: (property: string, value: number) => void;
 }
 
 const InputNumber = (props: propsInput) => {

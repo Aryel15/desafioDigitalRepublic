@@ -4,15 +4,15 @@ import InputNumber from '../InputNumber/InputNumber'
 
 interface propsInputs {
     wall: Wall, 
-    index:Number, 
-    handleChangeWall: (index: Number, property: string, value: Number) => void
+    index:number, 
+    handleChangeWall: (index: number, property: string, value: number) => void
 }
 
 const InputsWall = (props: propsInputs) => {
     const propertiesWall = ['largura', 'altura', 'portas', 'janelas']
     const { wall, index, handleChangeWall} = props    
 
-    const changeInputValue = (property: string, value: Number) =>{
+    const changeInputValue = (property: string, value: number) =>{
         handleChangeWall(index, property, value)
     }
   return (

@@ -15,7 +15,7 @@ const Form = () => {
   const [paint, setPaint] = useState(initialPaint)
   const [showResult, setShowResult] = useState(false)
 
-  const handleChangeWall = (index: Number, property: string, value: Number) => {
+  const handleChangeWall = (index: number, property: string, value: number) => {
     const newWalls = walls.map((wall, i) => {
       if (index === i) {
         return { ...wall, [property]: value };
@@ -44,7 +44,7 @@ const Form = () => {
     <>
       {showResult && <ModalResult paint={paint} onClose={() => setShowResult(false)}/>}
       <section className={styles.container_inputs}>
-        {walls.map((wall: Wall, index: Number) => (
+        {walls.map((wall: Wall, index: number) => (
           <div>
             <InputsWall
               index={index}
