@@ -23,7 +23,6 @@ export const calculatePaint = (walls: Wall[]) =>{
     const measures = Object.keys(initialPaint).map(key => parseFloat(key)).sort((a, b) => b - a)
     const totalArea = calculateArea(walls) 
     let totalMeasures = initialPaint
-    console.log(totalArea);
     
     let totalPaintNeeded = totalArea / literPerMeter
 
@@ -33,8 +32,15 @@ export const calculatePaint = (walls: Wall[]) =>{
         totalPaintNeeded %= size;
     })
 
-    console.log("Sobra", totalPaintNeeded);
-    
+    if (totalPaintNeeded > 0) {
+        for (let i = measures.length - 1; i >= 0; i--) {
+            const size = measures[i];
+            if (size >= totalPaintNeeded) {
+                totalMeasures[size]++;
+                break;
+            }
+        }
+    }    
 
     return totalMeasures
     

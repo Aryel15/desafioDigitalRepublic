@@ -24,7 +24,7 @@ const InputNumber = (props: propsInput) => {
                 id={id}
                 value={value.toString()}
                 className={styles.input}
-                onChange={(e) => changeInputValue(property, parseInt(e.target.value))}
+                onChange={(e) => changeInputValue(property, parseFloat(e.target.value))}
             />
             <button 
                 className={styles.button}
