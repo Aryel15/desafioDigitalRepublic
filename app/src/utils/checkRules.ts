@@ -1,11 +1,8 @@
 import { Wall } from "./interfaceWall"
+import { dooorHeight, dooorWidth, windowHeight, windowWidth } from "./windowsDoors"
 
 const maxMetersWall = 50
 const minMetersWall = 1
-const windowHeight = 1.2
-const windowWidth = 2
-const dooorHeight = 1.9
-const dooorWidth = 0.8
 const minHeightWall = dooorHeight + 0.3
 
 export const messageErrors = [

@@ -1,0 +1,53 @@
+.container{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000041;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+}
+.popup{
+    width: fit-content;
+    height: max-content;
+    padding: 2rem 5rem;
+    background-color: var(--white);
+    box-shadow: 0 0 5px #00000021;
+    animation: showModal cubic-bezier(0.65, 0, 0.09, 0.96) 1.5s;
+    text-align: center;
+}
+
+.buckets{
+    display: flex;
+    gap: 2rem;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.close{
+    display: flex;
+    justify-content: flex-end;
+    align-self: start;
+}
+
+.btnClose{
+    cursor: pointer;
+    position: relative;
+    top: -10px;
+    right: -50px;
+}
+
+@keyframes showModal{
+    0% {
+        transform: scale(0);
+    }
+    80%{
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}  
