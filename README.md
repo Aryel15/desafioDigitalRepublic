@@ -6,7 +6,15 @@
 - `npm install`
 - `npm run dev`
 
-### [Link](https://desafiodigitalrepublic.vercel.app/)
+### Para testar a aplicação:
+- `cd app`
+- `npm run cypress`
+- E2E Testing
+- Navegador a sua escolha > Start
+- cypress\e2e
+- `spec.cy.ts`
+
+### [Link da projeto](https://desafiodigitalrepublic.vercel.app/)
 
 ### O que deve ser desenvolvido
 Uma aplicação web ou mobile que ajude o usuário a calcular a quantidade de tinta necessária para pintar uma sala.
