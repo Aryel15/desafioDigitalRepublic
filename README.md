@@ -14,7 +14,7 @@
 - cypress\e2e
 - `spec.cy.ts`
 
-### [Link da projeto](https://desafiodigitalrepublic.vercel.app/)
+### [Link do projeto](https://desafiodigitalrepublic.vercel.app/)
 
 ### O que deve ser desenvolvido
 Uma aplicação web ou mobile que ajude o usuário a calcular a quantidade de tinta necessária para pintar uma sala.
