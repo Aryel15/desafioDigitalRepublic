@@ -15,7 +15,7 @@ const ModalResult = (props: propsModalResult) => {
         <section className={styles.container}>
             <div className={styles.popup}>
                 <div className={styles.close}>
-                    <IoMdClose onClick={onClose} className={styles.btnClose}/>
+                    <IoMdClose onClick={onClose} className={styles.btnClose}id="close"/>
                 </div>
                 <h2>Indicamos</h2>
                 <div className={styles.buckets}>

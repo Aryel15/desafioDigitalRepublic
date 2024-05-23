@@ -10,7 +10,7 @@ const Menu = () => {
     <nav className={styles.nav}>
         <img src={Logo} className={styles.logo} alt="Logo Digital Republic" />
         <h1 className={styles.title}>Calcular Tinta</h1>
-        <p className={styles.rules} onClick={() => setShowModal(!showModal)}>
+        <p className={styles.rules} onClick={() => setShowModal(!showModal)} id='regras'>
           <IoMdInformationCircleOutline /> Regras
         </p>
         {showModal && <ModalRules/>}

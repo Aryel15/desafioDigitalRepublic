@@ -58,13 +58,13 @@ const Form = () => {
         ))}
       </section>
       <section className={styles.container_buttons}>
-        <button className={styles.btn_calculate} disabled={!checkAllRules()} onClick={calculateTotalPaint}>
+        <button className={styles.btn_calculate} disabled={!checkAllRules()} onClick={calculateTotalPaint} id="calcular">
           Calcular
         </button>
         {checkAllRules() && 
         <div className={styles.btns_result}>
-          <button className={styles.btn_result} onClick={() => setShowResult(true)}>Resultado</button>
-          <button className={styles.btn_restart} onClick={restart}>
+          <button className={styles.btn_result} onClick={() => setShowResult(true)} id="resultado">Resultado</button>
+          <button className={styles.btn_restart} onClick={restart} id="restart">
             <VscDebugRestart />
           </button>
         </div>}
